@@ -1,0 +1,20 @@
+{
+    "name": "GnoxNahte.DialogueSystem.EditorMode",
+    "rootNamespace": "GnoxNahte.DialogueSystem.EditorMode",
+    "references": [
+        "GUID:cc7f05e8d8d9205419b021e0d1664d35",
+        "GUID:3e41fb5a987daad48bf6e4901c267c49",
+        "GUID:508837ce5e4f28f42a7042179c175bd3"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

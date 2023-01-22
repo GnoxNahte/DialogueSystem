@@ -1,0 +1,219 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6111049243914175853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Merchant Backstory
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 2
+  dialogues:
+  - speakerType: 2
+    dialogue: Please don't hurt me, I have a family!
+  - speakerType: 2
+    dialogue: Merchant backstory 1
+  - speakerType: 2
+    dialogue: Merchant backstory 2
+  - speakerType: 2
+    dialogue: If you don't hurt me, I will give you a weapon. For free of course!
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &-5497603505205062993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Mutliple Dialogue Convo
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 3
+  dialogues:
+  - speakerType: 0
+    dialogue: Player Dialogue 1
+  - speakerType: 2
+    dialogue: Merchant Dialogue 1
+  - speakerType: 2
+    dialogue: Merchant Dialogue 2
+  - speakerType: 3
+    dialogue: NPC Dialogue 1
+  - speakerType: 4
+    dialogue: Enemy Dialogue 1
+  - speakerType: 0
+    dialogue: Player Dialogue 2
+  - speakerType: 2
+    dialogue: Merchant Dialogue 3
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &-5337964987066504216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Merchant Hurt
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 3
+  dialogues:
+  - speakerType: 0
+    dialogue: 
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &-3301400471872684289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f89f538e1985174e8c2e806c89a37f2, type: 3}
+  m_Name: Common
+  m_EditorClassIdentifier: 
+  facts: []
+  events: []
+  conversations: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17df48ce1073e834d9d07b6ffce4b416, type: 3}
+  m_Name: SampleGameDialogueData2
+  m_EditorClassIdentifier: 
+  entries:
+  - {fileID: -3301400471872684289}
+  - {fileID: 1110941087105720640}
+  - {fileID: 8672768313388945685}
+--- !u!114 &848177085357842527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: On Talk to Merchant
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: -6111049243914175853}
+--- !u!114 &1110941087105720640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f89f538e1985174e8c2e806c89a37f2, type: 3}
+  m_Name: Room 3
+  m_EditorClassIdentifier: 
+  facts:
+  - {fileID: 2478321153592248860}
+  - {fileID: 6744965321481390503}
+  events:
+  - {fileID: 848177085357842527}
+  - {fileID: 2653508096847099015}
+  conversations:
+  - {fileID: -6111049243914175853}
+  - {fileID: -5337964987066504216}
+--- !u!114 &2478321153592248860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0b9015cddb54847ad237b4cdce582b, type: 3}
+  m_Name: Is Room 3 Cleared
+  m_EditorClassIdentifier: 
+  value: 0
+  startingValue: 0
+--- !u!114 &2653508096847099015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: On Merchant Hurt
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: -5337964987066504216}
+--- !u!114 &4402238038179628915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: Multiple Dialogue Events
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: -5497603505205062993}
+--- !u!114 &6744965321481390503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0b9015cddb54847ad237b4cdce582b, type: 3}
+  m_Name: If Hurt Merchant
+  m_EditorClassIdentifier: 
+  value: 0
+  startingValue: 0
+--- !u!114 &8672768313388945685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f89f538e1985174e8c2e806c89a37f2, type: 3}
+  m_Name: Entry 3
+  m_EditorClassIdentifier: 
+  facts: []
+  events:
+  - {fileID: 4402238038179628915}
+  conversations:
+  - {fileID: -5497603505205062993}

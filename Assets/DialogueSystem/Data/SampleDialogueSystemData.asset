@@ -1,0 +1,692 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8152057313495791200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Conversation 4
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 2
+  dialogues:
+  - speakerType: 0
+    dialogue: 
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &-5966137683011187075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Conversation 3
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 0
+  dialogues:
+  - speakerType: 0
+    dialogue: 
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &-5741947937463859192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: Test Multiple Speakers Event
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: 2162568072033607797}
+--- !u!114 &-5558738425708373718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0b9015cddb54847ad237b4cdce582b, type: 3}
+  m_Name: Num Times In Trigger
+  m_EditorClassIdentifier: 
+  value: 0
+  startingValue: 0
+--- !u!114 &-4815688454634939584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f89f538e1985174e8c2e806c89a37f2, type: 3}
+  m_Name: Test Multiple Speakers
+  m_EditorClassIdentifier: 
+  facts: []
+  events:
+  - {fileID: -5741947937463859192}
+  conversations:
+  - {fileID: 2162568072033607797}
+--- !u!114 &-4595582298252311830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Start Game, Played Tutorial
+  m_EditorClassIdentifier: 
+  conditions:
+  - type: 0
+    fact: {fileID: 3092165935413215002}
+    valueToCheck: 1
+  priority: 2
+  dialogues:
+  - speakerType: 0
+    dialogue: Congratulations on completing the tutorial! Have fun in main game!
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &-3779678356242316902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: Enter Tutorial Area
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: 6292260400427320129}
+--- !u!114 &-3429423091490420766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: TestTiming, Test Looping
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: 4781960717286584418}
+--- !u!114 &-3067886250776110604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: High PriorityConversation
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 3
+  dialogues:
+  - speakerType: 0
+    dialogue: High Priority
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &-2572196180140540087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Medium 2 PriorityConversation
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 2
+  dialogues:
+  - speakerType: 0
+    dialogue: Medium Priority 2 Dialogue
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &-2246041237664392378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: Medium Priority Event
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: 1913692454786081857}
+--- !u!114 &-558694430320062075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Conversation 6
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 3
+  dialogues:
+  - speakerType: 0
+    dialogue: 
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &-371365138349009972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f89f538e1985174e8c2e806c89a37f2, type: 3}
+  m_Name: Test Priority
+  m_EditorClassIdentifier: 
+  facts: []
+  events:
+  - {fileID: 1460697369673348116}
+  - {fileID: 4666130017917305002}
+  - {fileID: -2246041237664392378}
+  - {fileID: 4240620678666597327}
+  - {fileID: 8937800275267641381}
+  - {fileID: 4874091255255381440}
+  conversations:
+  - {fileID: 5731399239162537676}
+  - {fileID: -3067886250776110604}
+  - {fileID: 1913692454786081857}
+  - {fileID: 4736023498200169471}
+  - {fileID: 3135923594362513961}
+  - {fileID: -2572196180140540087}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17df48ce1073e834d9d07b6ffce4b416, type: 3}
+  m_Name: SampleDialogueSystemData
+  m_EditorClassIdentifier: 
+  entries:
+  - {fileID: 8597240796685974437}
+  - {fileID: 2484140534566764104}
+  - {fileID: 4059941665651643679}
+  - {fileID: -371365138349009972}
+  - {fileID: -4815688454634939584}
+  - {fileID: 870044802009635232}
+--- !u!114 &553123183398781800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: High Priority Convo
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 4
+  dialogues:
+  - speakerType: 0
+    dialogue: Very high priority dialogue
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &673295783475788374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: Start Main Game
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: -4595582298252311830}
+  - {fileID: 3092466242586034167}
+--- !u!114 &870044802009635232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f89f538e1985174e8c2e806c89a37f2, type: 3}
+  m_Name: TestInterruption
+  m_EditorClassIdentifier: 
+  facts: []
+  events:
+  - {fileID: 1523031892789205515}
+  conversations:
+  - {fileID: 553123183398781800}
+--- !u!114 &1460697369673348116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: Highest Priority Event
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: 5731399239162537676}
+--- !u!114 &1523031892789205515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: InterruptionEvent
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: 553123183398781800}
+--- !u!114 &1913692454786081857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Medium PriorityConversation
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 2
+  dialogues:
+  - speakerType: 0
+    dialogue: Medium Priority
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &2162568072033607797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: MultipleSpeakersConvo
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 3
+  dialogues:
+  - speakerType: 0
+    dialogue: Start Player Dialogue 1
+  - speakerType: 1
+    dialogue: Narrator Dialogue 1
+  - speakerType: 1
+    dialogue: Narrator Dialogue 2
+  - speakerType: 2
+    dialogue: NPC Dialogue 1
+  - speakerType: 0
+    dialogue: Player Dialogue 2
+  - speakerType: 0
+    dialogue: End Player Dialogue 3
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &2484140534566764104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f89f538e1985174e8c2e806c89a37f2, type: 3}
+  m_Name: Tutorial
+  m_EditorClassIdentifier: 
+  facts:
+  - {fileID: 3092165935413215002}
+  events:
+  - {fileID: -3779678356242316902}
+  - {fileID: 673295783475788374}
+  conversations:
+  - {fileID: 6292260400427320129}
+  - {fileID: -4595582298252311830}
+  - {fileID: 3092466242586034167}
+--- !u!114 &3092165935413215002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0b9015cddb54847ad237b4cdce582b, type: 3}
+  m_Name: If Played Tutorial
+  m_EditorClassIdentifier: 
+  value: 1
+  startingValue: 1
+--- !u!114 &3092466242586034167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Start Game, Skipped Tutorial
+  m_EditorClassIdentifier: 
+  conditions:
+  - type: 0
+    fact: {fileID: 3092165935413215002}
+    valueToCheck: 0
+  priority: 2
+  dialogues:
+  - speakerType: 0
+    dialogue: Skipping the tutorial? If you are not sure how to play, go back to
+      the green square.
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &3135923594362513961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Lowest PriorityConversation
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 0
+  dialogues:
+  - speakerType: 0
+    dialogue: Lowest Priority
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &4059941665651643679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f89f538e1985174e8c2e806c89a37f2, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  facts:
+  - {fileID: -5558738425708373718}
+  events:
+  - {fileID: -3429423091490420766}
+  conversations:
+  - {fileID: 8484887354756477820}
+  - {fileID: 4781960717286584418}
+  - {fileID: -5966137683011187075}
+  - {fileID: -8152057313495791200}
+  - {fileID: 8312895784511631622}
+  - {fileID: -558694430320062075}
+--- !u!114 &4240620678666597327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: Low Priority Event
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: 4736023498200169471}
+--- !u!114 &4666130017917305002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: High Priority Event
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: -3067886250776110604}
+--- !u!114 &4736023498200169471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Low PriorityConversation
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 1
+  dialogues:
+  - speakerType: 0
+    dialogue: Low Priority
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &4781960717286584418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: TestTime And Loop
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 3
+  dialogues:
+  - speakerType: 0
+    dialogue: short dialogue
+  - speakerType: 0
+    dialogue: loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong
+      dialogue
+  - speakerType: 0
+    dialogue: next dialogue
+  modifyFacts: []
+  events:
+  - {fileID: -3429423091490420766}
+  currDialogueIndex: -1
+--- !u!114 &4874091255255381440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: Medium Priority 2
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: -2572196180140540087}
+--- !u!114 &5731399239162537676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Highest PriorityConversation
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 4
+  dialogues:
+  - speakerType: 0
+    dialogue: Highest Priority
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &6292260400427320129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Start Tutorial
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 1
+  dialogues:
+  - speakerType: 0
+    dialogue: 'Press WASD or use the arrow keys to move around '
+  - speakerType: 0
+    dialogue: Press LMB to attack
+  modifyFacts:
+  - fact: {fileID: 3092165935413215002}
+    type: 0
+    modifyValue: 1
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &8312895784511631622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Conversation 5
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 3
+  dialogues:
+  - speakerType: 0
+    dialogue: 
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &8484887354756477820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Conversation 1
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 0
+  dialogues:
+  - speakerType: 0
+    dialogue: 
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &8597240796685974437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f89f538e1985174e8c2e806c89a37f2, type: 3}
+  m_Name: Common
+  m_EditorClassIdentifier: 
+  facts: []
+  events: []
+  conversations: []
+--- !u!114 &8937800275267641381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: Lowest Priority Event
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: 3135923594362513961}

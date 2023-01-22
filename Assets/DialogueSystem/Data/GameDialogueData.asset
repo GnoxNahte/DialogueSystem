@@ -1,0 +1,370 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6137867607303131178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f89f538e1985174e8c2e806c89a37f2, type: 3}
+  m_Name: Instructions
+  m_EditorClassIdentifier: 
+  facts: []
+  events: []
+  conversations: []
+--- !u!114 &-6111049243914175853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Merchant Backstory
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 2
+  dialogues:
+  - speakerType: 2
+    dialogue: Please don't hurt me, I have a family!
+  - speakerType: 2
+    dialogue: Merchant backstory 1
+  - speakerType: 2
+    dialogue: Merchant backstory 2
+  - speakerType: 2
+    dialogue: If you don't hurt me, I will give you a weapon. For free of course!
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &-5337964987066504216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Merchant Hurt
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 3
+  dialogues:
+  - speakerType: 0
+    dialogue: 
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &-4577011686751133346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: On Turnip Intro
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: -2983008534585300168}
+--- !u!114 &-3301400471872684289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f89f538e1985174e8c2e806c89a37f2, type: 3}
+  m_Name: Common
+  m_EditorClassIdentifier: 
+  facts: []
+  events: []
+  conversations: []
+--- !u!114 &-2983008534585300168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Turnip Introduction
+  m_EditorClassIdentifier: 
+  conditions:
+  - type: 0
+    fact: {fileID: 5206918370555055766}
+    valueToCheck: 0
+  priority: 3
+  dialogues:
+  - speakerType: 2
+    dialogue: Wait! Don't hurt me! I have a family to feed!
+  - speakerType: 2
+    dialogue: Oh, you're not going to hurt me?
+  - speakerType: 2
+    dialogue: Huh...well I guess I should thank you...
+  - speakerType: 2
+    dialogue: Consider this an investment, hehe
+  modifyFacts:
+  - fact: {fileID: 5206918370555055766}
+    type: 0
+    modifyValue: 1
+  events:
+  - {fileID: 1756065808949773865}
+  currDialogueIndex: 1
+--- !u!114 &-2487382959986180542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: After Give Weapon
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 3
+  dialogues:
+  - speakerType: 2
+    dialogue: Don't worry, I've got connections, this won't be the last you see of
+      me.
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &-2427318943931828859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: On Turnip attacked
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: 5711293311600639617}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17df48ce1073e834d9d07b6ffce4b416, type: 3}
+  m_Name: GameDialogueData
+  m_EditorClassIdentifier: 
+  entries:
+  - {fileID: -3301400471872684289}
+  - {fileID: 1110941087105720640}
+  - {fileID: 7116235473286686427}
+  - {fileID: -6137867607303131178}
+--- !u!114 &848177085357842527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: On Talk to Merchant
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: -6111049243914175853}
+--- !u!114 &1110941087105720640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f89f538e1985174e8c2e806c89a37f2, type: 3}
+  m_Name: Room 3
+  m_EditorClassIdentifier: 
+  facts:
+  - {fileID: 2478321153592248860}
+  - {fileID: 6744965321481390503}
+  events:
+  - {fileID: 848177085357842527}
+  - {fileID: 2653508096847099015}
+  conversations:
+  - {fileID: -6111049243914175853}
+  - {fileID: -5337964987066504216}
+--- !u!114 &1756065808949773865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: On After Give Weapon
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: -2487382959986180542}
+--- !u!114 &2478321153592248860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0b9015cddb54847ad237b4cdce582b, type: 3}
+  m_Name: Is Room 3 Cleared
+  m_EditorClassIdentifier: 
+  value: 0
+  startingValue: 0
+--- !u!114 &2653508096847099015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: On Merchant Hurt
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: -5337964987066504216}
+--- !u!114 &5206918370555055766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0b9015cddb54847ad237b4cdce582b, type: 3}
+  m_Name: If talked
+  m_EditorClassIdentifier: 
+  value: 0
+  startingValue: 0
+--- !u!114 &5711293311600639617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Turnip Getting Attacked
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 2
+  dialogues:
+  - speakerType: 0
+    dialogue: 'I...It''s all my FAULT! I knew it was wrong, it was all a LIE! I''m
+      just a FRAUD! '
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1
+--- !u!114 &6318601381056195160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8bcecc29876b8449af38c809397dfd, type: 3}
+  m_Name: Turnip Final Conversation
+  m_EditorClassIdentifier: 
+  conversations:
+  - {fileID: 9039064168303097089}
+--- !u!114 &6744965321481390503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0b9015cddb54847ad237b4cdce582b, type: 3}
+  m_Name: If Hurt Merchant
+  m_EditorClassIdentifier: 
+  value: 0
+  startingValue: 0
+--- !u!114 &7116235473286686427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f89f538e1985174e8c2e806c89a37f2, type: 3}
+  m_Name: Merchant (Turnip)
+  m_EditorClassIdentifier: 
+  facts:
+  - {fileID: 5206918370555055766}
+  events:
+  - {fileID: -4577011686751133346}
+  - {fileID: 1756065808949773865}
+  - {fileID: -2427318943931828859}
+  - {fileID: 6318601381056195160}
+  conversations:
+  - {fileID: -2983008534585300168}
+  - {fileID: -2487382959986180542}
+  - {fileID: 5711293311600639617}
+  - {fileID: 9039064168303097089}
+--- !u!114 &9039064168303097089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4565f3cf57e6529418a30b6717272fd3, type: 3}
+  m_Name: Turnip Final Conversation
+  m_EditorClassIdentifier: 
+  conditions: []
+  priority: 3
+  dialogues:
+  - speakerType: 2
+    dialogue: 'Oh, hey there Cara...long time no see, huh? '
+  - speakerType: 2
+    dialogue: 'Oh--this is my family. I decided to take a break from selling...used
+      goods. '
+  - speakerType: 2
+    dialogue: 'Nothing''s more important than family, no matter where they come from,
+      don''t ever forget it. '
+  - speakerType: 2
+    dialogue: 'As soon as you lose sight of what really matters...it''s not a life
+      anymore. '
+  modifyFacts: []
+  events: []
+  currDialogueIndex: -1

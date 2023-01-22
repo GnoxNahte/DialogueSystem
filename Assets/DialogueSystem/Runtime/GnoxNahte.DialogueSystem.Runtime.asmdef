@@ -1,0 +1,18 @@
+{
+    "name": "GnoxNahte.DialogueSystem.Runtime",
+    "rootNamespace": "GnoxNahte.DialogueSystem.Runtime",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:3e41fb5a987daad48bf6e4901c267c49"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
